@@ -5,6 +5,7 @@ It can be used as a fast way to reproduce or further explore our results with ou
 Also, it can be used and adapted as a toolbox for phase - phase coupling.
 
 Brief instructions
+
 1) Open the caller script 
 
 2) Run the first cell and select the folder where this package are stored.
@@ -23,8 +24,8 @@ choose more than one file, which can be sessions from the same animal, several s
 from several animals, or just one session from one animal. The only requisite is that
 the file must contain a nxm (channels vs time) matrix variable named LFP. You can
 refer to our avaiable data as a template.
-To avoid memory out messages, the script open and run each file in sequential order.
 
+To avoid memory out messages, the script open and run each file in sequential order.
 
 After plotting the results, all performed analyses are also stored in a variable called Data.
 
