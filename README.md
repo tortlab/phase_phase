@@ -18,11 +18,11 @@ Just comment out those you are not interested.
 
 5) Define the parameters of your analysis. Each parameter is described in the caller routine.
 
-When using real signals, a window will open and ask for mat file. You can
+When using real signals, a window will open and ask for a .mat file. You can actually
 choose more than one file, which can be sessions from the same animal, several sessions
 from several animals, or just one session from one animal. The only requisite is that
-the file must contain channels x time array *named LFP*. As a template, we refer to our data 
-avaiable at Dryad.
+the file must contain an array structured as channels x time which should be  *named LFP*. 
+As a template, we refer to our data avaiable at Dryad.
 
 To avoid memory out messages, the script opens and runs each file in sequential order.
 
