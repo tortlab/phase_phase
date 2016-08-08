@@ -2,6 +2,7 @@ function plot_phase_histogram(Data,ch,ses)
 phasebin = Data.results.session(ses).channel(ch).PhaseBin;
 Phases = Data.results.session(ses).channel(ch).PhaseCounts;
 
+figure
 myfilter = fspecial('gaussian',[10 10], 20);
 myfilteredimage = imfilter(Phases', myfilter, 'replicate');
 imagesc(phasebin,phasebin,myfilteredimage)

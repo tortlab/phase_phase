@@ -88,7 +88,7 @@ for ses = 1:size(FileName,2)
     Data = rmfield(Data,'LFP');
 end
 
-% plot_phase_phase(Data)
+plot_phase_phase(Data)
 
 
 end

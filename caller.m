@@ -1,6 +1,8 @@
-%% Caller routine
+%% Routine caller
 
-% This routine calls the main methods used in Scheffer-Teixeira & Tort, eLife 2016.
+% This routine calls the main methods used in the paper of
+% Scheffer-Teixeira & Tort (2016) published in eLife.
+
 
 % Select folder where files are located and add path
 path = uigetdir;
@@ -30,7 +32,7 @@ DataInput.par.slow_freq_lower_limit = 4;
 
 % upper band of the slower signal (for real signals,
 % the upper limit we used for theta was 20 instead of 12)
-DataInput.par.slow_freq_upper_limit = 12;
+DataInput.par.slow_freq_upper_limit = 20;
 
 % lower band of the faster signal
 DataInput.par.fast_freq_lower_limit = 30; 
@@ -51,7 +53,7 @@ DataInput.par.total_samples         = 300;
 DataInput.par.time_window           = 1;
 
 % quantity of subsurrogates (in our paper we used 100)
-DataInput.par.total_surr            = 2;    
+DataInput.par.total_surr            = 10;    
 
 
 % Analyze and update Data

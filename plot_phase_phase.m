@@ -14,29 +14,29 @@ r_scramble_pool     = [];
 
 for sss = 1:size(Data.results.session,2)
     for ccc = 1:size(Data.results.session(sss).channel,2)
-        if isfield(Data.results.session.channel,'r')
+        if isfield(Data.results.session(sss).channel(ccc),'r')
             r_original        = [r_original; Data.results.session(sss).channel(ccc).r];
         end
         
-        if isfield(Data.results.session.channel,'r_surr_randperm')
+        if isfield(Data.results.session(sss).channel(ccc),'r_surr_randperm')
             
-            if isfield(Data.results.session.channel.r_surr_randperm,'single')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_randperm,'single')
                 r_perm_single     = [r_perm_single; Data.results.session(sss).channel(ccc).r_surr_randperm.single];
             end
             
-            if isfield(Data.results.session.channel.r_surr_randperm,'pooled')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_randperm,'pooled')
                 r_perm_pool       = [r_perm_pool; Data.results.session(sss).channel(ccc).r_surr_randperm.pooled];
             end
         end
         
         
-        if isfield(Data.results.session.channel,'r_surr_shift')
+        if isfield(Data.results.session(sss).channel(ccc),'r_surr_shift')
             
-            if isfield(Data.results.session.channel.r_surr_shift,'single')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_shift,'single')
                 r_shift_single    = [r_shift_single; Data.results.session(sss).channel(ccc).r_surr_shift.single];
             end
             
-            if isfield(Data.results.session.channel.r_surr_shift,'pooled')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_shift,'pooled')
                 r_shift_pool      = [r_shift_pool; Data.results.session(sss).channel(ccc).r_surr_shift.pooled];
             end
             
@@ -44,13 +44,13 @@ for sss = 1:size(Data.results.session,2)
         
         
         
-        if isfield(Data.results.session.channel,'r_surr_scramble')
+        if isfield(Data.results.session(sss).channel(ccc),'r_surr_scramble')
             
-            if isfield(Data.results.session.channel.r_surr_scramble,'single')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_scramble,'single')
                 r_scramble_single = [r_scramble_single; Data.results.session(sss).channel(ccc).r_surr_scramble.single];
             end
             
-            if isfield(Data.results.session.channel.r_surr_scramble,'pooled')
+            if isfield(Data.results.session(sss).channel(ccc).r_surr_scramble,'pooled')
                 r_scramble_pool   = [r_scramble_pool; Data.results.session(sss).channel(ccc).r_surr_scramble.pooled];
             end
         end
