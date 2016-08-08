@@ -1,8 +1,6 @@
-%% Routine caller
+%% Caller routine
 
-% This routine calls the main methods used in the paper of
-% Scheffer-Teixeira & Tort (2016) published in eLife.
-
+% This routine calls the main methods used in Scheffer-Teixeira & Tort, eLife 2016.
 
 % Select folder where files are located and add path
 path = uigetdir;
