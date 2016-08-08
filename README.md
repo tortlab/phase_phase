@@ -28,3 +28,5 @@ To avoid memory out messages, the script opens and runs each file in sequential 
 
 After plotting the results, all analyses are stored in a variable called Data.
 
+In addition to the toolbox files, we also provide separated .m files for simulating and analyzing Kuramoto oscillators; these files reproduce Figures 1 and 6 of our paper and are named accordingly.  
+
