@@ -1,8 +1,6 @@
 %% Caller routine
 
-
 % This routine calls the main methods used in Scheffer-Teixeira & Tort, eLife 2016.
-
 
 % Select folder where files are located and add path
 path = uigetdir;
@@ -20,39 +18,40 @@ clc
 DataInput.signal_type = 'real_lfp'; 
 
 
-% Define desired surrogate methods: you can choose more than one
+% Define surrogate methods; you can choose more than one. 
+% Comment out the line to skip a given method.
 DataInput.surrogates{1} = 'permutation';
 DataInput.surrogates{2} = 'shift';
 DataInput.surrogates{3} = 'scramble';
 
-% Define some parameters
+% Define analysis parameters
 
-% lower band of the slower signal
+% lower band of the slower signal (in Hz)
 DataInput.par.slow_freq_lower_limit = 4;
 
 % upper band of the slower signal (for real signals,
-% the upper limit we used for theta was 20 instead of 12)
+% we used 20 Hz; for white noise, we used 12 Hz)
 DataInput.par.slow_freq_upper_limit = 20;
 
-% lower band of the faster signal
+% lower band of the faster signal (in Hz)
 DataInput.par.fast_freq_lower_limit = 30; 
 
-% upper band of the faster signal
+% upper band of the faster signal (in Hz)
 DataInput.par.fast_freq_upper_limit = 50; 
 
-% n:m curve plot
+% define n:m ratios for the Rnm curve
 DataInput.par.nmcurve               = 1:20; 
 
-% sampling rate
+% sampling rate (in Hz)
 DataInput.par.sampling_rate         = 1000; 
 
-% samples from the signal using the time window value
+% number of samples to be extracted from the signal
 DataInput.par.total_samples         = 300;    
 
-% time window for consecutive points (in seconds)
+% length of each sample (in seconds; consecutive points are analyzed)
 DataInput.par.time_window           = 1;
 
-% quantity of subsurrogates (in our paper we used 100)
+% number of surrogate runs per original run (in our paper we used 100)
 DataInput.par.total_surr            = 10;    
 
 
