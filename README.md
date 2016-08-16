@@ -1,7 +1,7 @@
 # phase_phase
 
-These Matlab scripts provide the main n:m phase-locking analyses used in the Scheffer-Teixeira & Tort, eLife 2016.
-They can be used to reproduce or further explore our results with the data we made available online at Dryad. 
+These Matlab scripts provide n:m phase-locking analyses used in Scheffer-Teixeira & Tort, eLife 2016. 
+To reproduce our results, we made the analyzed dataset available at http://dx.doi.org/10.5061/dryad.12t21 
 
 Brief instructions:
 
