@@ -1,4 +1,6 @@
+%% Coupled Kuramoto Oscillators 
 
+% Reproducing Figure 4C in Scheffer-Teixeira & Tort, eLife 2016
 
 %% Sawtooth example:
 
