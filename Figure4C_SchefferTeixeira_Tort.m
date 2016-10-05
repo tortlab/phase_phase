@@ -1,8 +1,6 @@
-%% Coupled Kuramoto Oscillators 
+%% Sawtooth example:
 
 % Reproducing Figure 4C in Scheffer-Teixeira & Tort, eLife 2016
-
-%% Sawtooth example:
 
 clear
 dt = 0.001;
